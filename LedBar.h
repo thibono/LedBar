@@ -12,6 +12,14 @@
 
 void LedBar_Init(void);
 
-void Led_Blink_Loop(uint32_t delay, uint32_t repetitions);
-void Led_Scale(uint32_t intensity);
+void LedBar_Blink_Loop(uint32_t delay, uint32_t repetitions);
+void LedBar_6BitScale(uint32_t intensity);
+int LedBar_12BitAnalogTo6BitScale(uint32_t analogValue);
+void LedBar_Inividual(uint8_t pin);
+void LedBar_Up(uint32_t delay);
+void LedBar_Down(uint32_t delay);
+void LedBar_Random(uint32_t delay);
+
+
+
 #endif /* LEDBAR_H_ */
